@@ -51,7 +51,7 @@ ufl gcd(ufl a, ufl b) {
 bool isPrime(ufl n) {
     independent_bits_engine<default_random_engine, 64, unsigned long long>
         engine;
-    if (n == 4) return false;
+    if (!(n & 1)) return false;
     if (n <= 3) return true;
     for (int j = 1; j <= 50; j++) {
         ufl a = (ufl)engine() % (n - 1) + 1;

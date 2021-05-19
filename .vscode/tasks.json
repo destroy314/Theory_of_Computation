@@ -26,18 +26,15 @@
         {
             "type": "shell",
             "label": "gcc",
-            "command": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin/gcc.exe",
+            "command": "gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "C:/Users/destroy314/Documents/GitHub/Theory_of_Computation/exe/${fileBasenameNoExtension}.exe",
+                "${fileDirname}/../exe/${fileBasenameNoExtension}.exe",
                 "-finput-charset=UTF-8",
                 "-fexec-charset=GBK"
             ],
-            "options": {
-                "cwd": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin"
-            },
             "problemMatcher": [
                 "$gcc"
             ],
@@ -46,18 +43,15 @@
         {
             "type": "shell",
             "label": "g++",
-            "command": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin/g++.exe",
+            "command": "g++",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "C:/Users/destroy314/Documents/GitHub/Theory_of_Computation/exe/${fileBasenameNoExtension}.exe",
+                "${fileDirname}/../exe/${fileBasenameNoExtension}.exe",
                 "-finput-charset=UTF-8",
                 "-fexec-charset=GBK"
             ],
-            "options": {
-                "cwd": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin"
-            },
             "problemMatcher": [
                 "$gcc"
             ],
